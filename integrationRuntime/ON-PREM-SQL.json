@@ -1,0 +1,6 @@
+{
+	"name": "ON-PREM-SQL",
+	"properties": {
+		"type": "SelfHosted"
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"name": "DS_ASQL_SRC",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ASQL_SRC",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

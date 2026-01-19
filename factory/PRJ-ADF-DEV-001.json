@@ -1,0 +1,9 @@
+{
+	"name": "PRJ-ADF-DEV-001",
+	"location": "uksouth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "f4cd4431-d487-419a-a470-64ad1ec08ef8",
+		"tenantId": "4a505b2a-1b0a-4b6b-9fd0-f03a76098e18"
+	}
+}

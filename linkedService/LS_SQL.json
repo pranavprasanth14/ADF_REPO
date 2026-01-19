@@ -1,0 +1,21 @@
+{
+	"name": "LS_SQL",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": ".\\SQLEXPRESS",
+			"database": "Azure_Data_Engg",
+			"encrypt": "optional",
+			"trustServerCertificate": true,
+			"authenticationType": "SQL",
+			"userName": "Pranav",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiI4YjY0OGE5ZC0wNmRiLTQ0MjEtYjIyYS00NDQ1MDgzMjRhOTEiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "ON-PREM-SQL",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"name": "DS_ASQL_EXCEL_META",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LS_ASQL_EXCEL_META",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

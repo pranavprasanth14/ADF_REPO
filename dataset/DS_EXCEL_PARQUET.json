@@ -1,0 +1,45 @@
+{
+	"name": "DS_EXCEL_PARQUET",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "DS_EXCEL_PARQUET",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": {
+					"value": "@concat(\n  'excel/',\n  formatDateTime(utcNow(),'yyyy'), '/',\n  formatDateTime(utcNow(),'MM'), '/',\n  formatDateTime(utcNow(),'dd')\n)\n",
+					"type": "Expression"
+				},
+				"fileSystem": "input"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "order_id",
+				"type": "UTF8"
+			},
+			{
+				"name": "payment_sequential",
+				"type": "UTF8"
+			},
+			{
+				"name": "payment_type",
+				"type": "UTF8"
+			},
+			{
+				"name": "payment_installments",
+				"type": "UTF8"
+			},
+			{
+				"name": "payment_value",
+				"type": "UTF8"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
