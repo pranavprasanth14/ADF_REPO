@@ -1,20 +1,67 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Azure Data Engineering Project
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+This repository contains an **end-to-end Azure Data Engineering project** implemented using **Azure Data Factory (ADF)**.  
+It demonstrates real-world ETL/data integration workflows, including datasets, pipelines, linked services, triggers, and integration runtimes.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+---
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+## 🛠️ Tech Stack
+- **Azure Data Factory** – Orchestration of ETL pipelines  
+- **Azure Integration Runtimes** – Secure and scalable data movement  
+- **Azure DevOps / GitHub** – Version control  
+- **Optional:** Databricks, ADLS Gen2, SQL for transformations (if used)
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+---
+
+## 📁 Repository Structure
+
+ADF_REPO/
+├── dataset/ # Dataset definitions
+├── factory/ # ADF factory configurations
+├── integrationRuntime/ # Integration Runtime settings
+├── linkedService/ # Linked service definitions
+├── pipeline/ # Pipeline JSON files
+├── trigger/ # Trigger definitions
+├── README.md # This file
+└── publish_config.json # Published pipeline configuration
+
+
+**Explanation of Sources and Data Flow:**
+- **Source Data:** Located in `dataset/` and accessed via linked services defined in `linkedService/`  
+- **Transformation:** Pipelines in `pipeline/` use datasets and dataflows to process the data  
+- **Storage / Output:** Transformed data is saved to curated zones in ADLS or target systems as defined in `linkedService/`  
+- **Automation:** Triggers in `trigger/` schedule the pipelines for regular execution  
+- **Runtime:** `integrationRuntime/` manages the compute for moving and transforming data  
+
+---
+
+## 🚀 Project Overview
+
+This project implements a full **data engineering workflow**:
+
+1. **Ingest data** from source datasets  
+2. **Transform and clean** data using parameterized ADF pipelines  
+3. **Store curated data** in structured zones (ADLS Gen2)  
+4. **Schedule pipelines** using triggers  
+5. **Manage version control** via GitHub integration  
+
+**Highlights:**
+- Parameterized and reusable pipelines  
+- Modular datasets and linked services  
+- CI/CD-ready with publish configurations  
+- Scalable architecture suitable for production environments
+
+---
+
+## 📌 How to Use
+
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/pranavprasanth14/ADF_REPO.git
+
+   
+💡 Author
+
+Pranav Prasanth – Azure Data Engineering enthusiast, passionate about building scalable, end-to-end cloud data solutions.
+
+#AzureDataFactory #DataEngineering #Azure #ADF #GitHub #CloudData
