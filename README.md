@@ -28,7 +28,7 @@ ADF_REPO/
 ├── publish_config.json      # ADF publish configuration
 ├── README.md                # Project documentation
 
-
+```
 
 
 **Explanation of Sources and Data Flow:**
@@ -70,6 +70,7 @@ This project implements a full **data engineering workflow**:
 Pranav Prasanth – Azure Data Engineering enthusiast, passionate about building scalable, end-to-end cloud data solutions.
 
 #AzureDataFactory #DataEngineering #Azure #ADF #GitHub #CloudData
+
 
 
 
