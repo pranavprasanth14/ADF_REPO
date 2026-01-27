@@ -13,17 +13,17 @@ It demonstrates real-world ETL/data integration workflows, including datasets, p
 
 ---
 
-## 📁 Repository Structure
-
+📁 Repository Structure
 ADF_REPO/
-├── dataset/ # Dataset definitions
-├── factory/ # ADF factory configurations
-├── integrationRuntime/ # Integration Runtime settings
-├── linkedService/ # Linked service definitions
-├── pipeline/ # Pipeline JSON files
-├── trigger/ # Trigger definitions
-├── README.md # This file
-└── publish_config.json # Published pipeline configuration
+├── dataset/                 # Dataset definitions (source & sink)
+├── factory/                 # Azure Data Factory factory configuration
+├── integrationRuntime/      # Integration Runtime settings
+├── linkedService/           # Linked service definitions
+├── pipeline/                # ADF pipeline JSON files
+├── trigger/                 # Pipeline trigger definitions
+├── publish_config.json      # ADF publish configuration
+├── README.md                # Project documentation
+
 
 
 **Explanation of Sources and Data Flow:**
@@ -65,3 +65,4 @@ This project implements a full **data engineering workflow**:
 Pranav Prasanth – Azure Data Engineering enthusiast, passionate about building scalable, end-to-end cloud data solutions.
 
 #AzureDataFactory #DataEngineering #Azure #ADF #GitHub #CloudData
+
